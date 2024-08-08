@@ -62,21 +62,21 @@
                 <h4>Email Address</h4>
                 <div class="input-group loginFields mb-3">
                     <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
-                    <input type="email" class="form-control" aria-label="Sizing example input"
+                    <input type="email" id="loginEmail" class="form-control" aria-label="Sizing example input"
                         placeholder="Enter Your Email Here" aria-describedby="inputGroup-sizing-default">
                 </div>
 
                 <h4>Password</h4>
                 <div class="input-group loginFields mb-3">
                     <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
-                    <input type="password" class="form-control" aria-label="Sizing example input"
+                    <input type="password" id="loginpw" class="form-control" aria-label="Sizing example input"
                         placeholder="Enter Your Password Here" aria-describedby="inputGroup-sizing-default">
-                        <button class="btn btn-light"> <i class="fa-solid fa-eye"></i> </button> 
+                        <button class="btn btn-light show"onclick="showpw()"><i class="fa-solid fa-eye"></i></button> 
                 </div>
                 <br>
                 <a href="./signup.html"> Don't Have an Account ? Signup Now</a>
                 <br> <br>
-                <button class="btn btn-info loginBtn">Login</button>
+                <button class="btn btn-info loginBtn" onclick="loginHandler()">Login</button>
 
 
             </div>
@@ -102,6 +102,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-<script src="../js/login.js"></script>
+<script src="../js/login.js" type="module"></script>
 
 </html>
